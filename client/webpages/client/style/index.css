@@ -1,0 +1,24 @@
+.createWorkoutGUI {
+    width: 80%;
+    height: 400px;
+    background-color: azure;
+    border: solid;
+    margin: 2em;
+}
+
+.timer {
+    width: 80%;
+    height: 300px;
+    background-color: azure;
+    border: solid;
+    margin: 2em;
+}
+
+.activityBox {
+    padding-top: 20px;
+}
+
+#displayTimer {
+    font-size: 40px;
+    font-weight: bold;
+}
