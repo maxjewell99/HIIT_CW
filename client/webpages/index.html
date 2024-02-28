@@ -1,60 +1,44 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="utf-8">
-    <title>HIIT CW</title>
-    <link rel="stylesheet" href="client/style/index.css">
-</head>
-
-<body>
-    <center>
-        <section>
-            <h1>HIIT Workout</h1>
-        </section>
-    </center>
-
-    <center>
-        <section>
-            <p>Create your own custom workouts!</p>
-        </section>
-    </center>
-
-    <center>
-        <div class="timer">
-            <p>Timer</p>
-            <div id="displayTimer"></div>
-            <input type="time" id="timerInput" min="0:30" max="05:00">
-            <button onclick="getTimerValue()">Set Time</button>
-
-            <section class="activityBox">
-                <label for="activity">Activity Name: </label>
-                <input type="text" id="activity">
-            </section>
-
-            <section class="activityBox">
-                <label for="description">Description: </label>
-                <input type="text" id="description">
-                <button onclick="submitActivity()">Submit</button>
-            </section>
-
-        </div>
-    </center>
-
-    <center>
-        <div class="createWorkoutGUI">
-            <p>Custom Workout</p>
-            <p id="activityOutput"></p>
-            <p id="descriptionOutput"></p>
-        </div>
-    </center>
-
-    <center>
-        <div class="createWorkoutGUI">
-            <p>Set Workout</p>
-        </div>
-    </center>
+<meta charset="utf-8">
+<script defer src="index.js"></script>
+<title>HIIT CW</title>
+<link rel="stylesheet" href="client/style/index.css">
 
 
-    <script src="index.js"></script>
-</body>
+<section>
+    <h1>HIIT Workout</h1>
+</section>
+
+<section>
+    <p>Create your own custom workouts!</p>
+</section>
+
+<section class="timer">
+    <h2>Timer</h2>
+    <div id="displayTimer"></div>
+    <input type="time" id="timerInput" min="0:30" max="05:00">
+
+    <section class="activityBox">
+        <label for="activity">Activity Name: </label>
+        <input type="text" id="activity">
+    </section>
+
+    <section class="activityBox">
+        <label for="description">Description: </label>
+        <input type="text" id="description">
+        <button id="submitActivityButton">Submit</button>
+    </section>
+
+</section>
+
+<section class="createWorkoutGUI">
+    <h2>Custom Workout</h2>
+    <p id="activityOutput"></p>
+    <p id="descriptionOutput"></p>
+</section>
+
+<section class="createWorkoutGUI">
+    <h2>Select Custom Workout</h2>
+</section>
