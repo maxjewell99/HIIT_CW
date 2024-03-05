@@ -6,13 +6,12 @@
 <title>HIIT CW</title>
 <link rel="stylesheet" href="client/style/index.css">
 
-
 <section>
     <h1>HIIT Workout</h1>
 </section>
 
 <section>
-    <p>Create your own custom workouts!</p>
+    <p class="subheadings">Create your own custom workouts!</p>
 </section>
 
 <section class="timer">
@@ -21,13 +20,13 @@
     <input type="time" id="timerInput" min="0:30" max="05:00">
 
     <section class="activityBox">
-        <label for="activity">Activity Name: </label>
-        <input type="text" id="activity">
+        <label for="activity">Activity: </label>
+        <input type="text" id="activity" placeholder="Enter name...">
     </section>
 
     <section class="activityBox">
         <label for="description">Description: </label>
-        <input type="text" id="description">
+        <input type="text" id="description" placeholder="Enter description...">
         <button id="submitActivityButton">Submit</button>
     </section>
 
@@ -35,8 +34,17 @@
 
 <section class="createWorkoutGUI">
     <h2>Custom Workout</h2>
-    <p id="activityOutput"></p>
-    <p id="descriptionOutput"></p>
+    <section class="workoutGrid">
+        <span class="subheadings">Activity</span>
+        <span class="subheadings">Description</span>
+        <span class="subheadings">Duration</span>
+        <span class="subheadings">Edit</span>
+    </section>
+    <button>Save</button>
+</section>
+
+<section>
+    
 </section>
 
 <section class="createWorkoutGUI">

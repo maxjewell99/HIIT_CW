@@ -8,7 +8,7 @@
 
 .timer {
     width: 80%;
-    height: 300px;
+    height: 250px;
     background-color: azure;
     border: solid;
     margin: 2em;
@@ -26,3 +26,20 @@
 section {
     text-align: center;
 }
+
+.workoutGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding-bottom: 30px;
+}
+
+.workoutRow {
+    display: contents; /* This makes the .workoutRow act as if it's not there, allowing its children to sit on the grid */
+    padding: 5px;
+}
+
+.subheadings {
+    font-size: large;
+}
+

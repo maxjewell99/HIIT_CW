@@ -42,9 +42,49 @@ function submitActivity() {
     console.log(activityValue);
     console.log(descriptionValue);
 
-    activityOutput.textContent = `Activity: ${activityValue}`;
-    descriptionOutput.textContent = `Description: ${descriptionValue}`;
+    displayWorkout(activityValue, descriptionValue, minutes, seconds);
+
+    // Clear input fields after adding the workout
+    timerInput.value = '';
+    activityName.value = '';
+    description.value = '';
 }
 
 const submitActivityButton = document.getElementById('submitActivityButton');
 submitActivityButton.addEventListener("click", submitActivity);
+
+
+function displayWorkout(activity, description, minutes, seconds) {
+    const workoutGrid = document.querySelector('.workoutGrid');
+
+    // Create new row for the workout
+    const workoutRow = document.createElement('section');
+    workoutRow.classList.add('workoutRow');
+
+    const activityItem = document.createElement('span');
+    activityItem.textContent = activity;
+
+    const descriptionItem = document.createElement('span');
+    descriptionItem.textContent = description;
+
+    const durationItem = document.createElement('span');
+    if (parseInt(minutes) === 0 && parseInt(seconds) === 0) {
+        durationItem.textContent = '0 : 00';
+    } else {
+        durationItem.textContent = `${minutes} : ${seconds}`;
+    }
+
+    const editItem = document.createElement('span');
+    editItem.textContent = 'Edit';
+
+    // Append elements to the row
+    workoutRow.appendChild(activityItem);
+    workoutRow.appendChild(descriptionItem);
+    workoutRow.appendChild(durationItem);
+    workoutRow.appendChild(editItem);
+
+    // Append row to the grid
+    workoutGrid.appendChild(workoutRow);
+}
+
+
