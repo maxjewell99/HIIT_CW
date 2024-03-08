@@ -19,9 +19,14 @@
     <div id="displayTimer"></div>
     <input type="time" id="timerInput" min="0:30" max="05:00">
 
+    <section class="workoutName">
+        <label for="workoutName">Workout Name: </label>
+        <input type="text" id="workoutName" placeholder="Enter name...">
+    </section>
+
     <section class="activityBox">
         <label for="activity">Activity: </label>
-        <input type="text" id="activity" placeholder="Enter name...">
+        <input type="text" id="activity" placeholder="Enter activity...">
     </section>
 
     <section class="activityBox">
@@ -34,19 +39,20 @@
 
 <section class="createWorkoutGUI">
     <h2>Custom Workout</h2>
+    <h3 id="workoutNameItem"></h3>
     <section class="workoutGrid">
         <span class="subheadings">Activity</span>
         <span class="subheadings">Description</span>
         <span class="subheadings">Duration</span>
         <span class="subheadings">Edit</span>
     </section>
-    <button>Save</button>
-</section>
-
-<section>
-    
+    <button id="saveCustomWorkoutButton">Save</button>
 </section>
 
 <section class="createWorkoutGUI">
     <h2>Select Custom Workout</h2>
+    <h3 id="workoutTitle"></h3>
+    <section class="customWorkoutGrid"></section>
 </section>
+
+

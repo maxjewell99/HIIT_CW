@@ -8,7 +8,7 @@
 
 .timer {
     width: 80%;
-    height: 250px;
+    height: 300px;
     background-color: azure;
     border: solid;
     margin: 2em;
@@ -23,6 +23,10 @@
     font-weight: bold;
 }
 
+.workoutName {
+    padding-top: 20px;
+}
+
 section {
     text-align: center;
 }
@@ -34,8 +38,16 @@ section {
     padding-bottom: 30px;
 }
 
+.customWorkoutGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding-bottom: 30px;
+}
+
 .workoutRow {
-    display: contents; /* This makes the .workoutRow act as if it's not there, allowing its children to sit on the grid */
+    display: contents;
+    /* This makes the .workoutRow act as if it's not there, allowing its children to sit on the grid */
     padding: 5px;
 }
 
@@ -43,3 +55,8 @@ section {
     font-size: large;
 }
 
+.customWorkoutRow button {
+    width: 8em;
+    height: 5em;
+    font-size: large;
+}
