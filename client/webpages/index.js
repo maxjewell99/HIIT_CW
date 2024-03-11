@@ -97,7 +97,6 @@ function displayWorkout(workoutNameItem, activity, description, minutes, seconds
 
     // append row to grid
     workoutGrid.appendChild(workoutRow);
-
 }
 
 function clearCustomWorkoutBuilder() {
@@ -126,7 +125,6 @@ function displaySelectCustomWorkout(workoutName) {
     customWorkoutRow.appendChild(customWorkoutSelector);
     customWorkoutGrid.appendChild(customWorkoutRow);
 }
-
 
 function getWorkoutData() {
     const workoutGrid = document.querySelector('.workoutGrid');
