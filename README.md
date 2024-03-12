@@ -1,16 +1,20 @@
 
 # up2116976 - HIIT CW
 
+## Configuration
+**NPM IS NOT NECESSARY FOR THIS PROTOTYPE**\
+**SERVER IS INCLUDED, BUT NOT IN USE**
+
 ## Key Features
 ### Creating a workout section (Timer Box)
 * Timer
     * Users can enter a time range that want for their set activity within their workout
 
-    * When the time reaches 0 the timer will change to "Times up!" 
+    * When the time reaches 0 the timer will change to "Time's up!" 
 
     * Currently the timer starts immediately just for testing purposes
 
-    * Has got an issue with counting down too fast over 1 minute but will be ammended upon final submission
+    * Has got an issue with counting down too fast over 59 seconds but will be ammended upon final submission
 
 
 * Input fields
@@ -81,4 +85,6 @@
 * Function review
     * I was implementing the grid within the 'displayWorkout()' function and was appending the variables into the grid. However I was using '.appen' to achieve this, and to my surprise...it didn't work. I gave the AI the function and asked if it knew the issue and what the best solution was. It gave back information that I was using the wrong method and I needed to use '.appendChild' instead as within the grid it is viewed as a child/parent relationship.
 
-    'In JavaScript, the appendChild() method is used to add a node to the end of the list of children of a specified parent node. The append() method, on the other hand, is used to append nodes or DOMString objects to the end of the specified parent node.'
+    AI Response
+
+    * "In JavaScript, the appendChild() method is used to add a node to the end of the list of children of a specified parent node. The append() method, on the other hand, is used to append nodes or DOMString objects to the end of the specified parent node."

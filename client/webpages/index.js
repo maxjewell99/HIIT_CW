@@ -30,14 +30,13 @@ function submitActivity() {
     const activityValue = activityName.value;
     const descriptionValue = description.value;
 
-    // workoutName.style.display = 'none';
-
     const [minutes, seconds] = timerValue.split(':');
     console.log('Minutes:', minutes);
     console.log('Seconds:', seconds);
 
     totalSeconds = parseInt(minutes) * 60 + parseInt(seconds);
 
+    // issue
     if (isNaN(totalSeconds)) {
         totalSeconds = 0;
         console.log('Total seconds:', totalSeconds);
